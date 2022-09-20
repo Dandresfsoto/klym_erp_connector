@@ -9,7 +9,7 @@ setup(
     author_email='diego.fonseca@omnilatam.com',
     license='BSD 2-clause',
     packages=['klym_erp_connector'],
-    install_requires=[],
+    install_requires=['validators==0.20.0', 'cryptography==3.0'],
 
     classifiers=[
         'Development Status :: 1 - Planning',
