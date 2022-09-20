@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='klym_erp_connector',
@@ -8,7 +8,7 @@ setup(
     author='Diego Fonseca',
     author_email='diego.fonseca@omnilatam.com',
     license='BSD 2-clause',
-    packages=['klym_erp_connector'],
+    packages=find_packages('.', exclude=['tests', 'tests.*']),
     include_package_data=True,
     install_requires=['validators==0.20.0', 'cryptography==3.0'],
 
